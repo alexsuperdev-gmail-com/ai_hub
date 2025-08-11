@@ -1,2 +1,16 @@
-- name: "Configure AWS Credentials" Action for GitHub Actions
-  uses: aws-actions/configure-aws-credentials@v4.3.1
+# Need ID token write permission to use OIDC
+permissions:
+  id-token: write
+jobs:
+  run_job_with_aws:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@main # Or a specific version
+        with:
+          role-to-assume: AI-HUB-GIT-HUB
+          aws-region: us-east-1
+      - name: Additional steps
+        run: |
+          # Your commands that require AWS credentials
+          aws sts get-caller-identity 
