@@ -1,0 +1,121 @@
+cards:
+  voice-assistant:
+      name: Voice Assistant
+      type: Solution
+      kit:
+        - KIT_PSE84_EVAL
+      device:
+        - PSOC Edge E84
+        - PSOC Edge E86
+      use_case:
+        - Speech Recognition
+        - Wake Word Detection
+      domain:
+        - Audio
+        - Voice
+      sensor:
+        - PDM Microphone
+        - Analog Microphone
+      application:
+        - Wearables
+        - Smart Home
+        - Appliances
+      thumbnail_image_id: 123
+      main_image_id: 456
+      thumbnail_text: Build voice-controlled user interfaces
+      main_description: DEEPCRAFT(TM) Voice Assistant is an Edge AI solution that enables natural voice interfaces to run locally on edge devices, optimized for power and performance on Infineon’s PSOC(TM) Edge MCUs.
+      links:
+        try_today:
+          label: Try Today
+          link: https://deepcraft.infineon.com/solutions/voice-assistant
+        product_details:
+          label: Product Details
+          link: https://www.infineon.com/deepcraft-edge-ai-solutions/voice-assistant
+      metrics:
+        memory-usage1:
+          label: RW Memory Usage (KB)
+          value: 1506
+          note: WWD + 20 Commands
+        memory-usage2:
+          label: RO Memory Usage (KB)
+          value: 534
+          note: WWD + 20 Commands
+        compute-usage:
+          label: Compute Usage (MCPS)
+          value: 31
+          note: WWD + 20 Commands
+        active-power:
+          label: Active Power (mW)
+          value: 7
+          note: WWD + 20 Commands
+  DarkNet53:
+      name: DarkNet53
+      type: Pre-Trained Model
+      kit:
+        - KIT_PSE84_EVAL
+      device:
+        - PSOC Edge E84
+        - PSOC Edge E86
+      use_case:
+        - Object Detection
+        - Face Detection
+        - Face Identification
+      domain:
+        - Vision
+      application:
+        - Security Cameras
+        - Smart Home
+        - Appliances
+      sensor:
+        - RGB Camera
+      algorithm:
+        - Classification
+      thumbnail_image_id: 987
+      main_image_id: 654
+      branding_image_id: 777
+      thumbnail_text: Detect faces in images 
+      main_description: The DarkNet53 Face Detection model detects faces in images and returns bounding boxes along with five facial keypoints for face alignment. It is useful for computer vision tasks like facial recognition and security systems. The model performs well with straight faces and can detect faces up to a distance of 1 meter. In group settings, it accurately identifies people in the forefront. Additionally, it supports motion tracking using keypoints. This makes it ideal for applications requiring reliable face detection in controlled environments.
+      links:
+        github:
+          label: GitHub
+          link: https://github.com/Infineon/aihub-pre-trained-models/DarkNet53
+      metrics:
+        inference-time:
+          label: Inference Time (ms)
+          value: 123
+          note: TBD
+        memory-usage:
+          label: RW Memory Usage (KB)
+          value: 321
+          note: TBD
+        compute-usage:
+          label: Compute Usage (MCPS)
+          value: 456
+          note: TBD
+  termite_detection:
+      name: Termite Detection
+      type: Studio Accelerator
+      kit:
+        - KIT_PSE84_EVAL
+      device:
+        - PSOC Edge E84
+        - PSOC Edge E86
+      use_case:
+        - Object Detection
+      domain:
+        - Vision
+      application:
+        - Security Camera
+        - Industrial Devices
+      sensor:
+        - RGB Camera
+      algorithm:
+        - Classification
+      thumbnail_image_id: 987
+      main_image_id: 654
+      thumbnail_text: Detect termite activity in images
+      main_description: TBD
+      links:
+        github:
+          label: GitHub
+          link: https://github.com/Infineon/aihub-accelerators/TermiteDetection
